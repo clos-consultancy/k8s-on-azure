@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "dnsNamePrefix": {
+            "value": "azure-k8s"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_DS2"
+        },
+        "linuxAdminUsername": {
+            "value": "kube-admin"
+        },
+        "orchestratorType": {
+            "value": "Kubernetes"
+        },
+        "masterCount": {
+            "value": 1
+        },
+        "sshRSAPublicKey": {
+            "value": "REPLACE_ME_WITH_YOUR_SSH_KEY"
+        },
+        "enableDiagnostics": {
+            "value": false
+        },
+        "servicePrincipalClientId": {
+            "value": "REPLACE_ME_WITH_YOUR_SERVICE_PRINCIPAL_CLIENT_ID"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "REPLACE_ME_WITH_YOUR_SERVICE_PRINCIPAL_CLIENT_SECRET"
+        }
+    }
+}
